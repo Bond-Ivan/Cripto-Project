@@ -1,1 +1,95 @@
-"use strict";var e=document.querySelector(".navigation__mobile-burger"),t=document.querySelector(".navigation__mobile-menu"),d=document.querySelector(".navigation__mobile-background"),a=document.querySelector(".navigation__mobile-close");e.addEventListener("click",(function(){d.classList.add("navigation__mobile-background--active"),t.classList.add("navigation__mobile-menu--active"),document.body.setAttribute("style","overflow: hidden; padding-right: 15px;")})),a.addEventListener("click",(function(){d.classList.remove("navigation__mobile-background--active"),t.classList.remove("navigation__mobile-menu--active"),document.body.removeAttribute("style","overflow: hidden; padding-right: 15px;")})),document.querySelectorAll('a[href^="#"]').forEach((function(e){e.addEventListener("click",(function(e){e.preventDefault(),document.querySelector(this.getAttribute("href")).scrollIntoView({behavior:"smooth"})}))}));var o=document.querySelector(".header__btn-language"),i=document.querySelector(".dashboard__background"),r=document.querySelector(".dashboard__modal"),n=document.querySelector(".dashboard__modal-btn--cancel"),c=document.querySelector(".dashboard__modal-btn--ok"),s=document.querySelector(".dashboard__modal-btn--help"),l=document.querySelector(".header__box"),u=document.querySelector(".dashboard__modal-help"),_=document.querySelector(".dashboard__modal-help__btn--cancel"),m=document.querySelector(".dashboard__modal-help__btn--send"),b=document.querySelector(".dashboard__modal-send"),v=document.querySelector(".dashboard__modal-send--close"),h=document.querySelector(".header__navigation-btn"),g=document.querySelector(".header__navigation-btn--mobile");o.addEventListener("click",(function(){i.classList.add("dashboard__background--active"),r.classList.add("dashboard__modal--active"),document.body.setAttribute("style","overflow: hidden; padding-right: 15px;"),l.setAttribute("style","padding-right: 50px;")})),n.addEventListener("click",(function(){i.classList.remove("dashboard__background--active"),r.classList.remove("dashboard__modal--active"),document.body.removeAttribute("style","overflow: hidden; padding-right: 15px;"),l.removeAttribute("style","padding-right: 50px;")})),s.addEventListener("click",(function(){r.classList.remove("dashboard__modal--active"),u.classList.add("dashboard__modal-help--active")})),_.addEventListener("click",(function(){u.classList.remove("dashboard__modal-help--active"),i.classList.remove("dashboard__background--active"),document.body.removeAttribute("style","overflow: hidden; padding-right: 15px;"),l.removeAttribute("style","padding-right: 50px;")})),m.addEventListener("click",(function(){u.classList.remove("dashboard__modal-help--active"),b.classList.add("dashboard__modal-send--active")})),v.addEventListener("click",(function(){b.classList.remove("dashboard__modal-send--active"),r.classList.add("dashboard__modal--active")})),c.addEventListener("click",(function(){i.classList.remove("dashboard__background--active"),r.classList.remove("dashboard__modal--active"),document.body.removeAttribute("style","overflow: hidden; padding-right: 15px;"),l.removeAttribute("style","padding-right: 50px;")})),h.addEventListener("click",(function(){i.classList.add("dashboard__background--active"),u.classList.add("dashboard__modal-help--active"),document.body.setAttribute("style","overflow: hidden; padding-right: 15px;"),l.setAttribute("style","padding-right: 50px;")})),g.addEventListener("click",(function(){t.classList.remove("navigation__mobile-menu--active"),document.body.removeAttribute("style","overflow: hidden; padding-right: 15px;"),i.classList.add("dashboard__background--active"),u.classList.add("dashboard__modal-help--active")}));
+"use strict"
+
+document.querySelectorAll('a[href^="#"]').forEach((a) => {
+    a.addEventListener('click', function (e) {
+        e.preventDefault();
+ 
+        document.querySelector(this.getAttribute('href')).scrollIntoView({
+            behavior: 'smooth'
+        });
+    });
+});
+
+const btnSettings = document.querySelector('.header__btn-language');
+const dashboardModalBackground = document.querySelector('.dashboard__background');
+const dashboardModal = document.querySelector('.dashboard__modal');
+const btnCancel = document.querySelector('.dashboard__modal-btn--cancel');
+const btnOk = document.querySelector('.dashboard__modal-btn--ok');
+const btnHelp = document.querySelector('.dashboard__modal-btn--help');
+const dashboardModalHelp = document.querySelector('.dashboard__modal-help');
+const btnCancelModalWindowHelp = document.querySelector('.dashboard__modal-help__btn--cancel');
+const btnSendModalWindowHelp = document.querySelector('.dashboard__modal-help__btn--send');
+const dashboardModalSend =  document.querySelector('.dashboard__modal-send');
+const dashboardCloseModalWindowSend = document.querySelector('.dashboard__modal-send--close');
+const headerNavBtn = document.querySelector('.header__navigation-btn');
+const headerNavBtnMobile = document.querySelector('.header__navigation-btn--mobile');
+const mobileBurger = document.querySelector('.navigation__mobile-burger');
+const mobileMenu = document.querySelector('.navigation__mobile-menu');
+const mobileMenuBackground = document.querySelector('.navigation__mobile-background');
+const mobileMenuBtnClose = document.querySelector('.navigation__mobile-close');
+
+btnSettings.addEventListener('click', () => {
+    dashboardModalBackground.classList.add('dashboard__background--active');
+    dashboardModal.classList.add('dashboard__modal--active');
+    document.body.setAttribute('style', 'overflow: hidden;');
+});
+
+btnCancel.addEventListener('click', () => {
+    dashboardModalBackground.classList.remove('dashboard__background--active');
+    dashboardModal.classList.remove('dashboard__modal--active');
+    document.body.removeAttribute('style', 'overflow: hidden;');
+});
+
+btnHelp.addEventListener('click', () => {
+    dashboardModal.classList.remove('dashboard__modal--active');
+    dashboardModalHelp.classList.add('dashboard__modal-help--active');
+});
+
+btnCancelModalWindowHelp.addEventListener('click', () => {
+    dashboardModalHelp.classList.remove('dashboard__modal-help--active');
+    dashboardModalBackground.classList.remove('dashboard__background--active');
+    document.body.removeAttribute('style', 'overflow: hidden;');
+	mobileMenuBackground.classList.remove('navigation__mobile-background--active');
+});
+
+btnSendModalWindowHelp.addEventListener('click', () => {
+    dashboardModalHelp.classList.remove('dashboard__modal-help--active');
+    dashboardModalSend.classList.add('dashboard__modal-send--active');
+});
+
+dashboardCloseModalWindowSend.addEventListener('click', () => {
+    dashboardModalSend.classList.remove('dashboard__modal-send--active');
+    dashboardModal.classList.add('dashboard__modal--active');
+});
+
+btnOk.addEventListener('click', () => {
+    dashboardModalBackground.classList.remove('dashboard__background--active');
+    dashboardModal.classList.remove('dashboard__modal--active');
+    document.body.removeAttribute('style', 'overflow: hidden;');
+});
+
+headerNavBtn.addEventListener('click', () => {
+    dashboardModalBackground.classList.add('dashboard__background--active');
+    dashboardModalHelp.classList.add('dashboard__modal-help--active');
+    document.body.setAttribute('style', 'overflow: hidden;');
+})
+
+headerNavBtnMobile.addEventListener('click', () => {
+    mobileMenu.classList.remove('navigation__mobile-menu--active');
+    document.body.removeAttribute('style', 'overflow: hidden;');
+    dashboardModalBackground.classList.add('dashboard__background--active');
+    dashboardModalHelp.classList.add('dashboard__modal-help--active');
+});
+
+mobileBurger.addEventListener('click', () => {
+    mobileMenuBackground.classList.add('navigation__mobile-background--active')
+    mobileMenu.classList.add('navigation__mobile-menu--active');
+    document.body.setAttribute('style', 'overflow: hidden;');
+});
+
+mobileMenuBtnClose.addEventListener('click', () => {
+    mobileMenuBackground.classList.remove('navigation__mobile-background--active')
+    mobileMenu.classList.remove('navigation__mobile-menu--active');
+    document.body.removeAttribute('style', 'overflow: hidden;');
+});
+
