@@ -1,0 +1,375 @@
+
+.container__autorization {
+    background-color: black;
+}
+
+.container__autorization-wrapper {
+    background-image:
+        url('images/kubic-13.png'),
+        url('images/kubic-14.png'),
+        url('images/kubic-8.png'),
+        url('images/kubic-6.png'),
+        url('images/kubic-12.png'),
+        url('images/kubic-2.png'),
+        url('images/autorization__phone-leftTop.png'),
+        url('images/header__right.png');
+    background-repeat: no-repeat;
+    background-size:
+        auto,
+        auto,
+        auto,
+        auto,
+        auto,
+        auto,
+        cover,
+        cover;
+    background-position:
+        9% 47%,
+        90% 65%,
+        85% 10%,
+        4% 66%,
+        left 10%,
+        right 0,
+        left top,
+        top right;
+}
+
+/******Autorization******/
+
+.autorization {
+    padding-top: 140px;
+    padding-bottom: 200px;
+
+    &__inner {
+        padding-top: 220px;
+        padding-bottom: 60px;
+    }
+
+    &__title {
+        width: 100%;
+        color: #FFFFFF;
+        font-size: 49px;
+        display: inline-block;
+        background: linear-gradient(280.98deg, #21D4FD 42.54%, #E40ECF 48.07%);
+        -webkit-text-fill-color: transparent;
+        -webkit-background-clip: text;
+        font-weight: 700;
+        line-height: 78px;
+        text-align: center;
+        margin-bottom: 56px;
+    }
+
+    &__form {
+
+        border: 1px solid #257B8E;
+        border-radius: 11px;
+        background: #257B8E;
+        background: linear-gradient(0deg, #143238 0%, #257B8E 100%);
+        padding: 35px 40px 55px 35px;
+        max-width: 660px;
+        margin: 0 auto;
+        margin-bottom: 25px;
+
+        &-title {
+            color: #FFFFFF;
+            font-size: 32px;
+            font-weight: 700;
+            line-height: 20px;
+            text-align: left;
+            margin-bottom: 30px;
+        }
+
+        &-label {
+            display: flex;
+            flex-direction: column;
+            color: #FFFFFF;
+            font-size: 15px;
+            font-weight: 400;
+            line-height: 30px;
+            text-align: left;
+            margin-bottom: 20px;
+        }
+
+        &-input {
+            cursor: grab;
+            background-color: transparent;
+            border: 1px solid #21D4FD;
+            color: #FFFFFF;
+            font-size: 16px;
+            font-weight: 700;
+            line-height: 32px;
+            border-radius: 11px;
+            text-align: left;
+            padding: 7px 28px;
+            margin-top: 5px;
+            transition: all 0.3s ease-in-out;
+
+            &::placeholder {
+                color: #FFFFFF;
+                font-size: 16px;
+                font-weight: 700;
+                line-height: 32px;
+            }
+
+            &:hover {
+				-webkit-box-shadow: 10px -10px 45px 10px #21D4FD;
+				-moz-box-shadow: 10px -10px 45px 10px #21D4FD;
+				box-shadow: 10px -10px 45px 10px #21D4FD;
+			}
+        }
+    }
+
+    &__btns-box {
+        display: grid;
+        gap: 11px;
+        grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+    }
+
+    &__btn {
+
+
+        &-ok {
+            color: transparent;
+            max-height: 60px;
+            width: 187px;
+            height: 60px;
+            padding: 17px 50px;
+            border-radius: 8px;
+            color: #FFFFFF;
+            font-size: 18px;
+            position: relative;
+            font-weight: 700;
+            line-height: 15.5px;
+            text-align: center;
+            background: linear-gradient(90deg, #e40ecf19 0%, rgba(33, 213, 253, 0.182));
+
+            &::after {
+                content: 'Enter';
+                font-size: 15px;
+                background: linear-gradient(90deg, #E40ECF 0%, #21D4FD 100%);
+                font-weight: 700;
+                width: 187px;
+                height: 60px;
+                border-radius: 7px;
+                line-height: 15.5px;
+                text-align: center;
+                color: #FFFFFF;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                position: absolute;
+                top: 0;
+                right: 0;
+                bottom: 0;
+                left: 0;
+                transform: translate(0);
+                transition: all 0.3s ease-in-out;
+            }
+
+            &:hover {
+
+                &::after {
+                    transform: translate(-5%, -25%);
+                }
+
+            }
+        }
+
+        &-help {
+            color: transparent;
+            max-height: 60px;
+            width: 187px;
+            height: 60px;
+            padding: 17px 50px;
+            border-radius: 8px;
+            font-size: 18px;
+            position: relative;
+            font-weight: 700;
+            line-height: 15.5px;
+            text-align: center; border: 1px solid #e40ecf30;
+            background: transparent;
+          
+
+            &::after {
+                content: 'Support';
+                font-size: 18px;
+                background: transparent;
+                font-weight: 700;
+                width: 187px;
+                height: 60px;
+                border: 1px solid #E40ECF;
+                border-radius: 7px;
+                line-height: 15.5px;
+                text-align: center;
+                color: #FFFFFF;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                position: absolute;
+                top: 0;
+                right: 0;
+                bottom: 0;
+                left: 0;
+                transform: translate(0);
+                transition: all 0.3s ease-in-out;
+            }
+
+            &:hover {
+
+                &::after {
+                    transform: translate(-5%, -25%);
+                }
+
+            }
+        }
+
+        &-remind {
+            position: relative;
+            color: transparent;
+            max-height: 60px;
+            width: 187px;
+            height: 60px;
+            border-radius: 8px;
+            font-size: 14px;
+            font-weight: 400;
+            line-height: 15.5px;
+            text-align: center;
+            color: transparent;
+            border: 1px solid #7887901d;
+
+            &::after {
+                content: 'Remind me of my password';
+                font-size: 15px;
+                background: transparent;
+                font-weight: 700;
+                width: 187px;
+                height: 60px;
+                border-radius: 7px;
+                line-height: 15.5px;
+                text-align: center;
+                padding-left: 35px;
+                padding-right: 35px;
+                color: #FFFFFF;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                position: absolute;
+                top: 0;
+                right: 0;
+                border: 1px solid #788790;
+                bottom: 0;
+                left: 0;
+                transform: translate(0);
+                transition: all 0.3s ease-in-out;
+            }
+
+            &:hover {
+
+                &::after {
+                    transform: translate(-5%, -25%);
+                }
+
+            }
+        }
+    }
+
+    &__separator {
+        color: #FFFFFF;
+        font-size: 18px;
+        font-weight: 400;
+        line-height: 26.01px;
+        text-align: center;
+        margin-bottom: 15px;
+    }
+
+    &__line {
+        text-align: center;
+        height: 10px;
+    }
+
+    &__socials {
+
+        &-title {
+            color: #FFFFFF;
+            font-size: 16px;
+            font-weight: 700;
+            line-height: 32px;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        &-list {
+            display: grid;
+            gap: 27px;
+            grid-template-columns: repeat(4, 55px);
+            justify-content: center;
+            align-items: center;
+        }
+
+        &-item {
+            position: relative;
+        }
+
+        &-icon {
+            position: absolute;
+            top: 12px;
+            left: 14px;
+
+            &--google {
+                left: 15px;
+            }
+
+            &--telegram {
+                left: 11px;
+            }
+
+            &--facebook {
+                left: 20px;
+            }
+
+            &--linkedin {
+                left: 15px;
+            }
+        }
+    }
+}
+
+@media (max-width:576px) {
+    .autorization {
+        &__title {
+            font-size: 49px;
+            line-height: 44px;
+            text-align: center;
+            margin-bottom: 40px;
+        }
+
+        &__form {
+            padding: 20px 17px;
+
+            &-title {
+                font-size: 24px;
+                line-height: 55px;
+            }
+        }
+
+        &__btn {
+            &-ok {
+                font-size: 15px;
+                line-height: 22px;
+            }
+
+            &-help {
+                font-size: 15px;
+                line-height: 22px;
+            }
+
+            &-remind {
+                font-size: 13px;
+                line-height: 22px;
+                border: none;
+                padding-top: 10px;
+                padding-bottom: 10px;
+            }
+        }
+    }
+}
