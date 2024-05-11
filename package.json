@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
-  "homepage": "https://Bond-Ivan.github.io/Cripto-Project",
+  "homepage": "https://github.com/Bond-Ivan/Cripto-Project",
   "scripts": {
     "deploy": "gh-pages -d dist",
     "build": "gulp build",
