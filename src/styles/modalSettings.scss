@@ -26,8 +26,10 @@
     border-radius: 11px;
     padding-top: 40px;
     padding-bottom: 40px;
-    position: relative;
+    position: absolute;
     margin: 0 auto;
+    left: 0;
+    right: 0;
     z-index: 10;
     transform: translateY(-100%);
     background: linear-gradient(0deg, #143137bf 0%, #257b8ed4 100%);
@@ -35,7 +37,7 @@
 
     &--active {
         opacity: 1;
-        transform: translateY(15%);
+        transform: translateY(5%);
         pointer-events: all;
     }
 
@@ -519,6 +521,7 @@
         }
 
         &-help {
+
             width: 95%;
 
             &__btns {
@@ -545,31 +548,3 @@
     }
 }
 
-// @media (max-width: 450px) {
-//     .dashboard__modal {
-
-        
-//         // &-btn {
-//         //     &--ok {
-//         //         width: 100%;
-//         //         &::after {
-//         //             width: 100%;
-//         //         }
-//         //     }
-
-//         //     &--help {
-//         //         width: 100%;
-//         //         &::after {
-//         //             width: 100%;
-//         //         }
-//         //     }
-
-//         //     &--cancel {
-//         //         width: 100%;
-//         //         &::after {
-//         //             width: 100%;
-//         //         }
-//         //     }
-//         // }
-//     }
-// }
