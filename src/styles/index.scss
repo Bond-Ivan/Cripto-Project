@@ -482,6 +482,8 @@
 	}
 }
 
+
+
 @media (max-width: 1550px) {
 	.header {
 		&__wrapper {
@@ -593,6 +595,10 @@
 				right,
 				right 66%,
 				center;
+		}
+
+		&__top {
+			padding-top: 115px;
 		}
 
 		&__title {

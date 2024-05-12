@@ -53,6 +53,7 @@ btnCancelModalWindowHelp.addEventListener('click', () => {
 });
 
 btnSendModalWindowHelp.addEventListener('click', () => {
+	mobileMenuBackground.classList.remove('navigation__mobile-background--active')
     dashboardModalHelp.classList.remove('dashboard__modal-help--active');
     dashboardModalSend.classList.add('dashboard__modal-send--active');
 });
