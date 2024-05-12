@@ -23,14 +23,6 @@
         &-item {
             width: 15%;
         }
-
-        &-link {
-            color: #AEAEAE;
-            font-size: 14px;
-            font-weight: 400;
-            line-height: 22.18px;
-            text-align: center;
-        }
     }
 
     &__inner {
@@ -49,6 +41,29 @@
             &:not(:last-child) {
                 margin-right: 16px;
             }
+
+            a {
+				outline: none;
+				&:focus {
+					svg {
+						fill: #d80bc4;
+					}
+				}
+				&:hover {
+					svg {
+						fill: #c414b2;
+					}
+				}
+				&:active {
+					svg {
+						fill: #470240;
+					}
+				}
+				svg {
+					fill: #F5F5F5;
+					transition: all 0.3s ease-in-out;
+				}
+			}
         }
     }
 
@@ -62,6 +77,18 @@
         font-weight: 700;
         line-height: 15.62px;
         text-align: center;
+
+        &:focus {
+            color: #d80bc4;
+        }
+
+        &:hover {
+            color: #c414b2;
+        }
+
+        &:active {
+            color: #470240;
+        }
     }
 
     &__logo {

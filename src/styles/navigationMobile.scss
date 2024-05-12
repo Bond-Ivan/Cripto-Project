@@ -7,7 +7,8 @@
 		left: 0;
 		z-index: 50;
 		opacity: 0;
-		background-color: rgba(0, 0, 0, 0.7607843137);;
+		background-color: rgba(0, 0, 0, 0.7607843137);
+		;
 		pointer-events: none;
 		transition: all 0.3s ease-in-out;
 
@@ -76,9 +77,50 @@
 	}
 
 	&-close {
+		width: 40px;
+		height: 40px;
 		position: absolute;
 		right: 0;
 		top: 0;
+
+		svg {
+			width: 100%;
+			height: 100%;
+			stroke: white;
+			fill: transparent;
+			border-radius: 100%;
+			transition: all 0.3s ease-in-out;
+		}
+
+		&:focus {
+			svg {
+				stroke: #069fc1ec;
+				-webkit-box-shadow: 10px -10px 45px 10px #0b4654;
+				-moz-box-shadow: 10px -10px 45px 10px #0b4654;
+				box-shadow: 10px -10px 45px 10px #0b4654;
+			}
+		}
+
+		&:hover {
+			svg {
+				stroke: #20bee2;
+				-webkit-box-shadow: 10px -10px 45px 10px #21D4FD;
+				-moz-box-shadow: 10px -10px 45px 10px #21D4FD;
+				box-shadow: 10px -10px 45px 10px #21D4FD;
+			}
+		}
+
+		&:active {
+			svg {
+
+
+				stroke: #07a1c4;
+				-webkit-box-shadow: 10px -10px 45px 10px #0086a4;
+				-moz-box-shadow: 10px -10px 45px 10px #0086a4;
+				box-shadow: 10px -10px 45px 10px #0086a4;
+			}
+		}
+
 	}
 
 	&-list {
@@ -127,7 +169,15 @@
 			z-index: 0;
 			position: absolute;
 			background: #c414b2;
+			outline: none;
 			transition: all 0.3s ease-in-out;
+		}
+
+		&:focus {
+			font-size: 35px;
+			outline: none;
+			-webkit-text-fill-color: #c414b2;
+			color: #c414b2;
 		}
 
 		&:hover {
@@ -154,9 +204,31 @@
 		justify-content: space-between;
 		width: 50%;
 
-		li a svg {
-			width: 30px;
-			height: 30px;
+		&__item {
+			a {
+				outline: none;
+				&:focus {
+					svg {
+						fill: #d80bc4;
+					}
+				}
+				&:hover {
+					svg {
+						fill: #c414b2;
+					}
+				}
+				&:active {
+					svg {
+						fill: #470240;
+					}
+				}
+				svg {
+					fill: #F5F5F5;
+					width: 30px;
+					height: 30px;
+					transition: all 0.3s ease-in-out;
+				}
+			}
 		}
 	}
 }

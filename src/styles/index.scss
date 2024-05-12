@@ -83,6 +83,7 @@
 					#fff 50%);
 			background-size: 200% 100%;
 			background-position: -100%;
+			outline: none;
 			transition: all 0.3s ease-in-out;
 
 			&:before {
@@ -99,6 +100,12 @@
 				transition: all 0.3s ease-in-out;
 			}
 
+			&:focus {
+				font-size: 20px;
+				-webkit-text-fill-color: #c414b2;
+				color: #c414b2;
+			}
+
 			&:hover {
 				background-position: 0%;
 
@@ -106,6 +113,8 @@
 					width: 100%;
 				}
 			}
+
+
 		}
 	}
 
@@ -557,8 +566,21 @@
 		}
 	}
 
-	.info__top-wrapper {
-		padding-left: 0;
+
+
+	.info__top {
+		&-wrapper {
+			padding-left: 0;
+			background-image:
+				url('images/info__logo-blockchain.png'),
+				url('images/info__logo-background.png'),
+				url('images/info__logo-back-2.png'),
+				url('images/info__logo-back.png');
+			background-repeat: no-repeat;
+			background-position: 17% 45%, -5% 38%, 5% 38%, 0 38%;
+			background-size: auto, 40%, 30%, 30%;
+		
+		}
 	}
 }
 
@@ -582,7 +604,7 @@
 				cover;
 			background-position:
 				bottom,
-				85% 10%,
+				100% 10%,
 				9% 65%,
 				4% 45%,
 				left 2%,
