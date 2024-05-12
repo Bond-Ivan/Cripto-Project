@@ -14,7 +14,7 @@
         <div class="dashboard__background">
             <div class="dashboard__modal">
                 <h2 class="dashboard__modal-title">Settings profile</h2>
-                <form class="dashboard__modal-form" action="#" method="post">
+                <form class="dashboard__modal-form" action="#" method="post" onsubmit="event.preventDefault();">
                     <div class="dashboard__modal-top">
                         <label class="dashboard__modal-label" for="name-M">
                             Your Name
@@ -74,7 +74,7 @@
 
             <div class="dashboard__modal-help">
                 <h2 class="dashboard__modal-title">Support</h2>
-                <form action="#" method="post">
+                <form action="#" method="post" onsubmit="event.preventDefault();">
                     <div class="dashboard__modal-top dashboard__modal-help__top">
                         <label class="dashboard__modal-label" for="name-MH">
                             Your Name
@@ -519,7 +519,7 @@
                 <section class="subscribe">
                     <div class="container">
                         <h2 class="subscribe__title">Subscribe to us and stay tuned!</h2>
-                        <form id="subscribe-id" action="#" method="post" class="subscribe__form">
+                        <form id="subscribe-id" action="#" method="post" class="subscribe__form" onsubmit="event.preventDefault();">
                             <label for="email-S" class="subscribe__form-box">
                                 <input class="subscribe__form-input" type="text" placeholder="Enter your e-mail"
                                     id="email-S" name="email-S">

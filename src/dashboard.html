@@ -16,7 +16,7 @@
             <div class="dashboard__background">
                 <div class="dashboard__modal">
                     <h2 class="dashboard__modal-title">Settings profile</h2>
-                    <form class="dashboard__modal-form" action="#" method="post">
+                    <form class="dashboard__modal-form" action="#" method="post" onsubmit="event.preventDefault();">
                         <div class="dashboard__modal-top">
                             <label class="dashboard__modal-label" for="name-M">
                                 Your Name
@@ -76,7 +76,7 @@
 
                 <div class="dashboard__modal-help">
                     <h2 class="dashboard__modal-title">Support</h2>
-                    <form action="#" method="post">
+                    <form action="#" method="post" onsubmit="event.preventDefault();">
                         <div class="dashboard__modal-top dashboard__modal-help__top">
                             <label class="dashboard__modal-label" for="name-WH">
                                 Your Name
@@ -326,7 +326,7 @@
                                             </p>
                                         </div>
                                         <div>
-                                            <form class="user-dashboard__balance-form" action="#" method="post">
+                                            <form class="user-dashboard__balance-form" action="#" method="post" onsubmit="event.preventDefault();">
                                                 <label class="user-dashboard__balance-label" for="wallet-F">
                                                     FOIL Wallet:
                                                     <input class="user-dashboard__balance-input"

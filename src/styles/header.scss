@@ -1,5 +1,6 @@
 .header {
     &__box {
+        z-index: 2;
         position: fixed;
         top: 0;
         right: 0;
@@ -93,6 +94,11 @@
         &__btn-person {
             display: none;
         }
+
+        &__box {
+            padding-left: 25px;
+            padding-right: 25px;
+        }
     }
 
 }
@@ -139,6 +145,8 @@
 
         &__box {
             flex-direction: row;
+            padding-left: 10px;
+            padding-right: 10px;
         }
         &__messengers-list {
             display: none;
