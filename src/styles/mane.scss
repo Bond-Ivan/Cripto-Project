@@ -1,49 +1,53 @@
-// @import "_footer.scss";
-// @import "_modalSettings.scss";
-// @import "_navigationMobile.scss";
+@import "./autorization.scss";
+@import "./dashboard.scss";
+@import "./footer.scss";
+@import "./header.scss";
+@import "./index.scss";
+@import "./modalSettings.scss";
+@import "./navigationMobile.scss";
 
 * {
-	padding: 0px;
-	margin: 0px;
-	border: none;
+  padding: 0px;
+  margin: 0px;
+  border: none;
 }
 
 @font-face {
-	font-family: 'Adineue PRO Cyr';
-	src: local('Adineue PRO Cyr Bold'), local('TT Commons-Light'),
-		url('fonts/adineueprocyr_boldweb.woff2') format('woff2'),
-		url('fonts/adineueprocyr_boldweb.woff') format('woff');
-	font-weight: 700;
-	font-style: normal;
-	font-display: swap;
+  font-family: "Adineue PRO Cyr";
+  src: local("Adineue PRO Cyr Bold"), local("TT Commons-Light"),
+    url("../fonts/adineueprocyr_boldweb.woff2") format("woff2"),
+    url("../fonts/adineueprocyr_boldweb.woff") format("woff");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
 }
 
 @font-face {
-	font-family: 'Adineue PRO Cyr';
-	src: local('Adineue PRO Cyr Light'), local('TT Commons-Regular'),
-		url('fonts/adineueprocyr_lightweb.woff2') format('woff2'),
-		url('fonts/adineueprocyr_lightweb.woff') format('woff');
-	font-weight: 300;
-	font-style: normal;
-	font-display: swap;
+  font-family: "Adineue PRO Cyr";
+  src: local("Adineue PRO Cyr Light"), local("TT Commons-Regular"),
+    url("../fonts/adineueprocyr_lightweb.woff2") format("woff2"),
+    url("../fonts/adineueprocyr_lightweb.woff") format("woff");
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
 }
 
 *,
 *::before,
 *::after {
-	box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 a,
 a:link,
 a:visited {
-	text-decoration: none;
+  text-decoration: none;
 }
 
 a {
-	&:hover {
-		text-decoration: none;
-	}
+  &:hover {
+    text-decoration: none;
+  }
 }
 
 aside,
@@ -52,7 +56,7 @@ footer,
 header,
 section,
 main {
-	display: block;
+  display: block;
 }
 
 h1,
@@ -62,116 +66,106 @@ h4,
 h5,
 h6,
 p {
-	font-size: inherit;
-	font-weight: inherit;
+  font-size: inherit;
+  font-weight: inherit;
 }
 
 ul,
 ul li {
-	list-style: none;
+  list-style: none;
 }
 
 img {
-	vertical-align: top;
+  vertical-align: top;
 }
 
 img,
 svg {
-	max-width: 100%;
-	height: auto;
+  max-width: 100%;
+  height: auto;
 }
 
 address {
-	font-style: normal;
+  font-style: normal;
 }
 
 input,
 textarea,
 button,
 select {
-	font-family: inherit;
-	font-size: inherit;
-	color: inherit;
-	background-color: transparent;
+  font-family: inherit;
+  font-size: inherit;
+  color: inherit;
+  background-color: transparent;
 }
 
 input {
-	&::-ms-clear {
-		display: none;
-	}
+  &::-ms-clear {
+    display: none;
+  }
 }
 
 button,
 input[type="submit"] {
-	display: inline-block;
-	box-shadow: none;
-	background-color: transparent;
-	background: none;
-	cursor: pointer;
+  display: inline-block;
+  box-shadow: none;
+  background-color: transparent;
+  background: none;
+  cursor: pointer;
 }
 
 input:focus,
 input:active,
 button:focus,
 button:active {
-	outline: none;
+  outline: none;
 }
 
 button {
-	&::-moz-focus-inner {
-		padding: 0;
-		border: 0;
-	}
+  &::-moz-focus-inner {
+    padding: 0;
+    border: 0;
+  }
 }
 
 label {
-	cursor: pointer;
+  cursor: pointer;
 }
 
 legend {
-	display: block;
+  display: block;
 }
 
 body {
-	font-family: 'Adineue PRO Cyr', Courier, monospace;
+  font-family: "Adineue PRO Cyr", Courier, monospace;
 }
 
-
 .container {
-	margin: 0 auto;
-	max-width: 1200px;
-	padding-left: 35px;
-	padding-right: 35px;
+  margin: 0 auto;
+  max-width: 1200px;
+  padding-left: 35px;
+  padding-right: 35px;
 }
 
 @media (max-width: 1200px) {
-	.container {
-
-		padding-left: 25px;
-		padding-right: 25px;
-	}
+  .container {
+    padding-left: 25px;
+    padding-right: 25px;
+  }
 }
 
 @media (max-width: 576px) {
-	.container {
-		
-		padding-left: 10px;
-		padding-right: 10px;
-	}
+  .container {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
 }
 
 .container__index {
-	background-image:
-		url('images/kubic-10.png'),
-		url('images/kubic-9.png'),
-		url('images/container__phone-right.png'),
-		url('images/container__phone-left.png'),
-		url('images/info__phone.png');
-	background-repeat: no-repeat, no-repeat, no-repeat, no-repeat, repeat-y;
-	background-size: auto, auto, cover, cover, cover;
-	background-position: right 93%, left 85%, left 20%, right 20%, center;
+  background-image: url("../images/kubic-10.png"), url("../images/kubic-9.png"),
+    url("../images/container__phone-right.png"),
+    url("../images/container__phone-left.png"), url("../images/info__phone.jpg");
+  background-repeat: no-repeat, no-repeat, no-repeat, no-repeat, repeat-y;
+  background-size: auto, auto, cover, cover, cover;
+  background-position: right 93%, left 85%, left 20%, right 20%, center;
 }
-
-
-
-
