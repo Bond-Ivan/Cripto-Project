@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Cripto Project</title>
     <link rel="icon" type="image/x-icon" href="./images/favicon.png" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
     <link rel="stylesheet" href="./styles/mane.scss" />
   </head>
 
@@ -330,7 +331,11 @@
           </div>
           <div class="container">
             <div class="header__top">
-              <h1 class="header__title">
+              <h1
+                class="header__title"
+                data-aos="fade-right"
+                data-aos-duration="1500"
+              >
                 Foil.Network
                 <span class="header__title-span"
                   >Bounty Hunt
@@ -340,7 +345,11 @@
               <button type="button" class="header__button">
                 Actual Airdrops
               </button>
-              <p class="header__description">
+              <p
+                class="header__description"
+                data-aos="fade-up"
+                data-aos-duration="3000"
+              >
                 Earn FOIL by participating in the bounty campaign. The
                 Blockchain Interactions crypto rewarFds event brings the
                 important mission of scalability and sustainability of the FOIL
@@ -490,7 +499,11 @@
                     <p class="info__top-text">
                       Join FOIL Blockchain Interactions and earn FOIL crypto.
                     </p>
-                    <button type="button" class="info__top-btn">
+                    <button
+                      type="button"
+                      class="info__top-btn"
+                      data-aos="zoom-in"
+                    >
                       <svg
                         width="138"
                         height="138"
@@ -529,7 +542,7 @@
               </div>
 
               <div class="info__bottom">
-                <div class="info__bottom-item">
+                <div class="info__bottom-item" data-aos="fade-right">
                   <img
                     class="info__bottom-img"
                     src="./images/info_airdrop1.png"
@@ -542,7 +555,7 @@
                     aliqua.
                   </p>
                 </div>
-                <div class="info__bottom-item">
+                <div class="info__bottom-item" data-aos="fade-left">
                   <img
                     class="info__bottom-img"
                     src="./images/info_airdrop2.png"
@@ -569,7 +582,11 @@
               </h2>
               <div>
                 <ul class="completed__list">
-                  <li class="completed__item">
+                  <li
+                    class="completed__item"
+                    data-aos="zoom-in-up"
+                    data-aos-delay="100"
+                  >
                     <img
                       class="completed__item-img"
                       src="./images/completed-1.png"
@@ -587,7 +604,11 @@
                     </p>
                   </li>
 
-                  <li class="completed__item">
+                  <li
+                    class="completed__item"
+                    data-aos="zoom-in-up"
+                    data-aos-delay="200"
+                  >
                     <img
                       class="completed__item-img"
                       src="./images/completed-2.png"
@@ -606,7 +627,11 @@
                     </p>
                   </li>
 
-                  <li class="completed__item">
+                  <li
+                    class="completed__item"
+                    data-aos="zoom-in-up"
+                    data-aos-delay="300"
+                  >
                     <img
                       class="completed__item-img"
                       src="./images/completed-3.png"
@@ -625,7 +650,11 @@
                     </p>
                   </li>
 
-                  <li class="completed__item">
+                  <li
+                    class="completed__item"
+                    data-aos="zoom-in-up"
+                    data-aos-delay="100"
+                  >
                     <img
                       class="completed__item-img"
                       src="./images/completed-4.png"
@@ -646,7 +675,11 @@
                     </p>
                   </li>
 
-                  <li class="completed__item">
+                  <li
+                    class="completed__item"
+                    data-aos="zoom-in-up"
+                    data-aos-delay="200"
+                  >
                     <img
                       class="completed__item-img"
                       src="./images/completed-5.png"
@@ -663,7 +696,11 @@
                     </p>
                   </li>
 
-                  <li class="completed__item">
+                  <li
+                    class="completed__item"
+                    data-aos="zoom-in-up"
+                    data-aos-delay="300"
+                  >
                     <img
                       class="completed__item-img"
                       src="./images/completed-6.png"
@@ -681,7 +718,11 @@
                     </p>
                   </li>
 
-                  <li class="completed__item">
+                  <li
+                    class="completed__item"
+                    data-aos="zoom-in-up"
+                    data-aos-delay="100"
+                  >
                     <img
                       class="completed__item-img"
                       src="./images/completed-7.png"
@@ -700,7 +741,11 @@
                     </p>
                   </li>
 
-                  <li class="completed__item">
+                  <li
+                    class="completed__item"
+                    data-aos="zoom-in-up"
+                    data-aos-delay="200"
+                  >
                     <img
                       class="completed__item-img"
                       src="./images/completed-8.png"
@@ -720,7 +765,11 @@
                     </p>
                   </li>
 
-                  <li class="completed__item">
+                  <li
+                    class="completed__item"
+                    data-aos="zoom-in-up"
+                    data-aos-delay="300"
+                  >
                     <img
                       class="completed__item-img"
                       src="./images/completed-9.png"
@@ -747,13 +796,16 @@
 
           <section class="subscribe">
             <div class="container">
-              <h2 class="subscribe__title">Subscribe to us and stay tuned!</h2>
+              <h2 class="subscribe__title" data-aos="zoom-in-up">
+                Subscribe to us and stay tuned!
+              </h2>
               <form
                 id="subscribe-id"
                 action="#"
                 method="post"
                 class="subscribe__form"
                 onsubmit="event.preventDefault();"
+                data-aos="fade-bottom"
               >
                 <label for="email-S" class="subscribe__form-box">
                   <input
@@ -914,6 +966,10 @@
       </div>
     </div>
 
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
     <script src="./js/index.js"></script>
   </body>
 </html>

@@ -3,7 +3,8 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Autorization</title>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
     <link rel="icon" type="image/x-icon" href="./images/favicon.png" />
     <link rel="stylesheet" href="./styles/mane.scss" />
   </head>
@@ -473,6 +474,7 @@
                   action="#"
                   method="post"
                   onsubmit="event.preventDefault();"
+                  data-aos="zoom-in"
                 >
                   <h3 class="autorization__form-title">Enter to account</h3>
                   <label class="autorization__form-label" for="email-A">
@@ -681,7 +683,10 @@
         </main>
       </div>
     </div>
-
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
     <script src="./js/index.js"></script>
   </body>
 </html>

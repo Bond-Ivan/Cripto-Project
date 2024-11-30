@@ -176,7 +176,8 @@
     &-wrapper {
       background-image: url("../images/info__logo-blockchain.png"),
         url("../images/info__logo-background.png"),
-        url("../images/info__logo-back-2.png"), url("../images/info__logo-back.png");
+        url("../images/info__logo-back-2.png"),
+        url("../images/info__logo-back.png");
       background-repeat: no-repeat;
       background-position: 17% 45%, -14% 38%, 5% 38%, 0 38%;
       background-size: auto, auto, 30%, 30%;
@@ -267,6 +268,11 @@
   &__item {
     &-img {
       margin-bottom: 15px;
+      transform: scale(1);
+      transition: all 0.3s ease-in-out;
+      &:hover {
+        transform: scale(1.05);
+      }
     }
 
     &-title {
@@ -462,7 +468,8 @@
       padding-left: 0;
       background-image: url("../images/info__logo-blockchain.png"),
         url("../images/info__logo-background.png"),
-        url("../images/info__logo-back-2.png"), url("../images/info__logo-back.png");
+        url("../images/info__logo-back-2.png"),
+        url("../images/info__logo-back.png");
       background-repeat: no-repeat;
       background-position: 17% 45%, -5% 38%, 5% 38%, 0 38%;
       background-size: auto, 40%, 30%, 30%;
@@ -634,7 +641,8 @@
       background-image: url("../images/header__bottom.png"),
         url("../images/kubic-6.png"), url("../images/kubic-3.png"),
         url("../images/header_cosmo.png"), url("../images/header__left.png"),
-        url("../images/header__right.png"), url("../images/header__cosmo-phone.png");
+        url("../images/header__right.png"),
+        url("../images/header__cosmo-phone.png");
       background-repeat: no-repeat;
       background-size: 100% 25%, auto, 50%, 350%, 100%, cover, cover;
       background-position: bottom, 4% 45%, 30% 90%, 65% bottom, left, right,

@@ -19,6 +19,7 @@
 .autorization {
   padding-top: 140px;
   padding-bottom: 200px;
+  height: 100vh;
 
   &__inner {
     padding-top: 220px;
@@ -274,12 +275,18 @@
 
     &-item {
       position: relative;
+      transition: all 0.3s ease-in-out;
+
+      &:hover {
+        transform: scale(1.2);
+      }
     }
 
     &-icon {
       position: absolute;
       top: 12px;
       left: 14px;
+      transform: scale(1);
 
       &--google {
         left: 15px;
