@@ -6,7 +6,7 @@
   "scripts": {
     "deploy": "gh-pages -d dist",
     "start": "parcel",
-    "build": "parcel build src/index.html"
+    "build": "parcel build src/index.html --public-url ./"
   },
   "author": "Ivan Bondarenko",
   "license": "ISC",
