@@ -200,6 +200,12 @@
       -webkit-text-fill-color: transparent;
       -webkit-background-clip: text;
     }
+
+    &-btn {
+      svg {
+        max-width: -webkit-fill-available;
+      }
+    }
   }
 
   &__bottom {
@@ -208,9 +214,6 @@
     padding-bottom: 62px;
 
     &-item {
-      -webkit-box-shadow: -66px -100px 63px 52px rgba(171, 0, 201, 0.2);
-      -moz-box-shadow: -66px -100px 63px 52px rgba(171, 0, 201, 0.2);
-      box-shadow: -60px -250px 100px 50px #ab00c933;
 
       &:not(:last-child) {
         margin-right: 30px;
@@ -219,6 +222,9 @@
 
     &-img {
       margin-bottom: 30px;
+      -webkit-box-shadow: -66px -100px 63px 52px rgba(171, 0, 201, 0.2);
+      -moz-box-shadow: -66px -100px 63px 52px rgba(171, 0, 201, 0.2);
+      box-shadow: -60px -250px 100px 50px #ab00c933;
     }
 
     &-title {

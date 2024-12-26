@@ -84,6 +84,7 @@
 
     svg {
       width: 100%;
+      max-width: -webkit-fill-available;
       height: 100%;
       stroke: white;
       fill: transparent;

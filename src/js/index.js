@@ -94,3 +94,6 @@ mobileMenuBtnClose.addEventListener('click', () => {
     document.body.removeAttribute('style', 'overflow: hidden;');
 });
 
+window.addEventListener('load', function() {
+	document.getElementById('preloader').style.display = 'none';
+});
