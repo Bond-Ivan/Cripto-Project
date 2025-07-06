@@ -177,7 +177,7 @@ body {
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: #81dbff;
+  background-color: #104e67;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -185,32 +185,24 @@ body {
 }
 
 .loader {
-  width: 8px;
-  height: 8px;
-  position: relative;
+  width: 48px;
+  height: 48px;
+  border: 5px solid #FFF;
+  border-bottom-color: transparent;
   border-radius: 50%;
-  background: #ff5c8a; /* Яркий розовый цвет */
-  animation: wave 1s ease-in infinite;
-}
+  display: inline-block;
+  box-sizing: border-box;
+  animation: rotation 1s linear infinite;
+  }
 
-@keyframes wave {
-  0% {  
-    box-shadow:
-      0 0 0 0px rgba(255, 92, 138, 1),    /* Яркий розовый */
-      0 0 0 20px rgba(255, 92, 138, 0.4),
-      0 0 0 40px rgba(255, 153, 255, 0.8), /* Яркий фиолетовый */
-      0 0 0 60px rgba(255, 153, 255, 0.6),
-      0 0 0 80px rgba(255, 92, 138, 0.2);
+  @keyframes rotation {
+  0% {
+      transform: rotate(0deg);
   }
-  100% {  
-    box-shadow:
-      0 0 0 80px rgba(255, 153, 255, 0),   /* Прозрачный яркий фиолетовый */
-      0 0 0 60px rgba(255, 92, 138, 0.2),
-      0 0 0 40px rgba(255, 92, 138, 0.4),
-      0 0 0 20px rgba(255, 153, 255, 0.8),
-      0 0 0 0px rgba(255, 92, 138, 1);    /* Яркий розовый */
+  100% {
+      transform: rotate(360deg);
   }
-}
+  } 
 
 #preloader img {
   width: 100px; /* Размер прелоадера */
